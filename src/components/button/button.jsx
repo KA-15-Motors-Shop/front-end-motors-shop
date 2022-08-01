@@ -1,6 +1,6 @@
 import { ButtonStyle, Imagem } from "./style";
 
-function ButtonComponent ({ 
+function Button ({ 
         bd_width=1, 
         bd_color="none", 
         bg="white", 
@@ -20,7 +20,8 @@ function ButtonComponent ({
         mob_img_h,
         alt="iamgem do botão",
         p="1px 6px",
-        m="0px"
+        m="0px",
+        onClick
     }) {
     if ( icon !== false ) {
         return (
@@ -36,6 +37,7 @@ function ButtonComponent ({
                 height_mobile={mob_h}
                 padding={p}
                 margin={m}
+                onClick={onClick}
             >
                 <Imagem 
                     width_imagem={img_w}
@@ -65,10 +67,11 @@ function ButtonComponent ({
             fonte_mobile={mob_font}
             padding={p}
             margin={m}
+            onClick={onClick}
         >
             {text}
         </ButtonStyle>
     )
 };
 
-export default ButtonComponent;
+export default Button;
