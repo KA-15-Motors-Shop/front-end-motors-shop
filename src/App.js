@@ -1,7 +1,11 @@
+import Router from './components/routes';
+import { GlobalStyle } from './styles/global';
+
 function App() {
   return (
-    <div className="App">
-      <header className="App-header"></header>
+    <div>
+      <GlobalStyle />
+      <Router />
     </div>
   );
 }

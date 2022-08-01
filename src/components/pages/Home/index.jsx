@@ -1,7 +1,10 @@
-import { Header } from '../components/Header';
-import { useState } from 'react';
+import { Header } from '../../Header';
 
-const Home = () => {
-  return <></>;
+export const Home = () => {
+  return (
+    <>
+      <Header>irrra</Header>
+    </>
+  );
 };
 export default Home;
