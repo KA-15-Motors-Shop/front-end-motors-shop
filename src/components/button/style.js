@@ -2,7 +2,7 @@ import styled from "styled-components";
 
 export const ButtonStyle = styled.button`
     width: ${ props => typeof props.width == "number"? (props.width + "px") : (props.width) };
-    color: ${props => props.color} ;
+    color: ${props => props.color };
     height: ${ props => typeof props.height  === "number"? (props.height + "px") : (props.height) };
     border: ${props => props.border_color === "none"? "none" : ("solid " + props.border_color + " " + props.border_width + "px") };
     background-color: ${ props => props.background };
