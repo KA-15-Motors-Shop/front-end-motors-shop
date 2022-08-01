@@ -4,7 +4,7 @@ function Button ({
         bd_width=1, 
         bd_color="none", 
         bg="white", 
-        c="black", 
+        c, 
         radius=4, 
         w=133, 
         h=48, 
