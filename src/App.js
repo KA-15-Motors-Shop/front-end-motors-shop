@@ -1,5 +1,6 @@
 import { GlobalStyle } from './styles/global';
 import RouterPages from './routes';
+
 function App() {
   return (
     <div>
