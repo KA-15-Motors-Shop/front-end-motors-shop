@@ -3,8 +3,8 @@ import { ButtonStyle, Imagem } from "./style";
 function Button ({ 
         bd_width=1, 
         bd_color="none", 
-        bg="white", 
-        c, 
+        bg="#fff", 
+        c="#0B0D0D", 
         radius=4, 
         w=133, 
         h=48, 
