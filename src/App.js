@@ -1,6 +1,8 @@
 import logo from './logo.svg';
 import './App.css';
-import ButtonComponent from './components/button/button';
+import Button from './components/button/button';
+import Input from './components/input/input';
+import Footer from './components/footer/footer';
 
 function App() {
   return (
@@ -20,8 +22,15 @@ function App() {
         >
           Learn React
         </a>
-        <ButtonComponent p={"0px 2px"} m={"10px 0px 0px 0px"} text={"teste"} c={"#ffffff"} w={150} img_w={50} bg={"black"} radius={"5%"} mob_w={70}/>
+        <>ola</>
+        <br></br>
+        <>hello</>
+        <br></br>
+        <>teste</>
+        <Input text={"testando input"} p={"0 0 0 10px"} bd_color={"gray"} />
+        <Button p={"0px 2px"} m={"10px 0px 0px 0px"} text={"teste"} c={"#ffffff"} w={150} img_w={50} bg={"black"} radius={"5%"} mob_w={70}/>
       </header>
+      <Footer />
     </div>
   );
 }
