@@ -1,7 +1,7 @@
 import styled from "styled-components";
 
-export const DivFooter = styled.footer`
-    background: #0B0D0D;
+export const DivFooter = styled.div`
+    background: var(--grey0);
     width: 100%;
     height: 140px;
     display: flex;
@@ -16,5 +16,5 @@ export const DivFooter = styled.footer`
 `
 
 export const Span = styled.span`
-    color: #FFFFFF;
+    color: var(--whitefixed);
 `
