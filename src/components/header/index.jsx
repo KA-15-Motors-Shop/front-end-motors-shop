@@ -2,7 +2,7 @@ import React from 'react';
 import { Container, Box, ContainerBox, TitleDesc } from './styles';
 //import Motors from '../../assets/Motors.png';
 //import { FaBars } from 'react-icons/fa';
-import Navbar from '../Navbar';
+import Navbar from '../navbar';
 
 function Header () {
   return (
