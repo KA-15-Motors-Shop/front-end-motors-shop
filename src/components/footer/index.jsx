@@ -1,7 +1,7 @@
 import { DivFooter, Span } from "./style";
 import LogoFooter from "../../assets/Motors shop.svg";
 import angleUp from "../../assets/angle-up.svg";
-import Button from "../button/button";
+import Button from "../button";
 
 function Footer () {
     return (

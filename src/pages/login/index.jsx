@@ -1,5 +1,5 @@
-import Button from "../../components/button/button";
-import Footer from "../../components/footer/footer";
+import Button from "../../components/button";
+import Footer from "../../components/footer";
 
 function Login () {
     return (
