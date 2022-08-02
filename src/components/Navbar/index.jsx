@@ -15,7 +15,7 @@ import {
   Vl,
 } from './styles';
 
-const Navbar = () => {
+function Navbar () {
   return (
     <>
       <Nav>
