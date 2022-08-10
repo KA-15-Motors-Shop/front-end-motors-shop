@@ -34,11 +34,11 @@ export const Wr = styled.div`
   gap: 12px;
   display: flex;
   box-sizing: border-box;
-  margin-bottom: 200px;
 
   @media screen and (min-width: 1440px) {
     padding: 0 60px;
     gap: 24px;
+    margin-bottom: 200px;
 
     ::-webkit-scrollbar {
       height: 8px;
@@ -89,6 +89,7 @@ export const Img = styled.div`
   @media screen and (min-width: 1440px) {
     width: 581.96px;
     height: 315.11px;
+    margin-top: 0;
   }
 `;
 
