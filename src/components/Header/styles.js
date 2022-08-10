@@ -46,7 +46,7 @@ export const Box = styled.div`
   align-items: center;
 
   h1 {
-    font-family: 'Lexend Deca', sans-serif;
+    font-family: 'Lexend', sans-serif;
     font-weight: 600;
     line-height: 40px;
     padding: 53px 0px 53px 0px;
