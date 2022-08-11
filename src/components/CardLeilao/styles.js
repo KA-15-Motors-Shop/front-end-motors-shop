@@ -4,7 +4,7 @@ import Car from '../../assets/Photo.png';
 export const Container = styled.div`
   display: flex;
   flex-direction: column;
-  padding: 0 12px;
+  padding-left: 12px;
 
   @media screen and (min-width: 1440px) {
     padding: 0 60px;
@@ -24,7 +24,7 @@ export const Title = styled.div`
   }
 
   @media screen and (min-width: 1440px) {
-    padding: 100px 60px 40px;
+    padding: 100px 0px 40px;
   }
 `;
 
@@ -36,7 +36,6 @@ export const Wr = styled.div`
   box-sizing: border-box;
 
   @media screen and (min-width: 1440px) {
-    padding: 0 60px;
     gap: 24px;
     margin-bottom: 200px;
 

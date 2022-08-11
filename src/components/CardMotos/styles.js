@@ -3,10 +3,11 @@ import styled from 'styled-components';
 export const Container = styled.div`
   display: flex;
   padding-left: 23px;
-  /* overflow-x: auto; */
+  overflow-x: auto;
   width: 100%;
   box-sizing: border-box;
   flex-direction: column;
+  padding-bottom: 93px;
 
   @media screen and (min-width: 1440px) {
     padding: 0px 60px;
@@ -31,7 +32,7 @@ export const Title = styled.div`
 `;
 
 export const Wr = styled.div`
-  /* overflow-x: auto; */
+  overflow-x: auto;
   width: 100%;
   gap: 12px;
   display: flex;
@@ -39,7 +40,7 @@ export const Wr = styled.div`
 
   @media screen and (min-width: 1440px) {
     gap: 48px;
-    margin-bottom: 200px;
+    margin-bottom: 116px;
 
     ::-webkit-scrollbar {
       height: 8px;

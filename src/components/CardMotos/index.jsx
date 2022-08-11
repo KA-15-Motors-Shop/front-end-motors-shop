@@ -1,5 +1,5 @@
 import React from 'react';
-import './stylesa.css';
+import './styles.css';
 import { Swiper, SwiperSlide } from 'swiper/react';
 import { Autoplay, FreeMode } from 'swiper';
 import 'swiper/css';
@@ -16,13 +16,13 @@ import {
   CarInfo,
   WrapperInfo,
 } from './styles';
-import Car from '../../assets/car.png';
+import Moto from '../../assets/moto.png';
 
-const CardCarros = () => {
+const CardMotos = () => {
   return (
     <Container>
       <Title>
-        <h1>Carros</h1>
+        <h1>Motos</h1>
       </Title>
       <Wr>
         <Swiper
@@ -51,9 +51,7 @@ const CardCarros = () => {
             <Wrapper>
               <InfoSection>
                 <ImgContainer>
-                  <a href="https://www.google.com.br/">
-                    <img src={Car}></img>
-                  </a>
+                  <img src={Moto}></img>
                 </ImgContainer>
                 <div>
                   <h1>Product title stays here - max 1 line</h1>
@@ -81,7 +79,7 @@ const CardCarros = () => {
             <Wrapper>
               <InfoSection>
                 <ImgContainer>
-                  <img src={Car}></img>
+                  <img src={Moto}></img>
                 </ImgContainer>
                 <div>
                   <h1>Product title stays here - max 1 line</h1>
@@ -109,7 +107,7 @@ const CardCarros = () => {
             <Wrapper>
               <InfoSection>
                 <ImgContainer>
-                  <img src={Car}></img>
+                  <img src={Moto}></img>
                 </ImgContainer>
                 <div>
                   <h1>Product title stays here - max 1 line</h1>
@@ -137,7 +135,7 @@ const CardCarros = () => {
             <Wrapper>
               <InfoSection>
                 <ImgContainer>
-                  <img src={Car}></img>
+                  <img src={Moto}></img>
                 </ImgContainer>
                 <div>
                   <h1>Product title stays here - max 1 line</h1>
@@ -165,7 +163,7 @@ const CardCarros = () => {
             <Wrapper>
               <InfoSection>
                 <ImgContainer>
-                  <img src={Car}></img>
+                  <img src={Moto}></img>
                 </ImgContainer>
                 <div>
                   <h1>Product title stays here - max 1 line</h1>
@@ -195,4 +193,4 @@ const CardCarros = () => {
   );
 };
 
-export default CardCarros;
+export default CardMotos;
