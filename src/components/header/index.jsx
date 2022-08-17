@@ -1,8 +1,8 @@
 import React from 'react';
-import { Container, Box, ContainerBox, TitleDesc } from './styles';
+import Navbar from '../navbar';
+import { Container, Box, ContainerBox, TitleDesc } from './style';
 //import Motors from '../../assets/Motors.png';
 //import { FaBars } from 'react-icons/fa';
-import Navbar from '../navbar';
 
 function Header () {
   return (

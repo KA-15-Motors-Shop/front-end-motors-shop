@@ -18,10 +18,10 @@ function Button ({
         img_h,
         mob_img_w,
         mob_img_h,
-        alt="iamgem do botão",
+        alt="imagem do botão",
         p="1px 6px",
         m="0px",
-        onClick
+        onClick=()=>false
     }) {
     if ( icon !== false ) {
         return (

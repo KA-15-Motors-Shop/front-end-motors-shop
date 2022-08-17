@@ -13,7 +13,7 @@ import {
   NavBtnLink,
   NavBtnLinkLogin,
   Vl,
-} from './styles';
+} from './style';
 
 function Navbar () {
   return (
