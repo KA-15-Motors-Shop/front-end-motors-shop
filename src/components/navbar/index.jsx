@@ -29,22 +29,22 @@ function Navbar () {
 
           <NavMenu>
             <NavItem>
-              <NavLinks>Carros</NavLinks>
+              <NavLinks to="/leilao">Carros</NavLinks>
             </NavItem>
             <NavItem>
-              <NavLinks>Motos</NavLinks>
+              <NavLinks to="/leilao">Motos</NavLinks>
             </NavItem>
             <NavItem>
-              <NavLinks to="">Leilao</NavLinks>
+              <NavLinks to="/leilao">Leilao</NavLinks>
             </NavItem>
 
             <Vl></Vl>
 
             <NavBtn>
-              <NavBtnLinkLogin to="signin=">Fazer Login</NavBtnLinkLogin>
+              <NavBtnLinkLogin to="/login">Fazer Login</NavBtnLinkLogin>
             </NavBtn>
             <NavBtn>
-              <NavBtnLink to="signin=">Cadastrar</NavBtnLink>
+              <NavBtnLink to="/register">Cadastrar</NavBtnLink>
             </NavBtn>
           </NavMenu>
         </NavbarContainer>
