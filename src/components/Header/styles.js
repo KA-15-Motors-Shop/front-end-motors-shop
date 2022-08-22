@@ -4,20 +4,6 @@ export const Container = styled.header`
   height: 703px;
   background-color: var(--brand-1);
 
-  nav {
-    height: 80px;
-    background-color: var(--whitefixed);
-    display: flex;
-    align-items: center;
-    padding: 0 20px;
-    justify-content: space-between;
-  }
-
-  img {
-    width: 153.02px;
-    height: 26.34px;
-  }
-
   @media screen and (min-width: 1024px) {
     height: 583px;
   }

@@ -18,6 +18,69 @@ import {
 } from './styles';
 import Moto from '../../assets/moto.png';
 
+const mainProjects = [
+  {
+    id: '1',
+    title: 'Product title stays here - max 1 line',
+    image: Moto,
+    description:
+      'Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem...',
+    initial: 'SL',
+    user: 'Samuel Leao',
+    year: '2013',
+    km: '0 km',
+    price: 'R$ 00.000,00',
+  },
+  {
+    id: '2',
+    title: 'Product title stays here - max 1 line',
+    image: Moto,
+    description:
+      'Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem...',
+    initial: 'SL',
+    user: 'Samuel Leao',
+    year: '2013',
+    km: '0 km',
+    price: 'R$ 00.000,00',
+  },
+  {
+    id: '3',
+    title: 'Product title stays here - max 1 line',
+    image: Moto,
+    description:
+      'Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem...',
+    initial: 'SL',
+    user: 'Samuel Leao',
+    year: '2013',
+    km: '0 km',
+    price: 'R$ 00.000,00',
+  },
+  {
+    id: '4',
+    title: 'Product title stays here - max 1 line',
+    image: Moto,
+    description:
+      'Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem...',
+    initial: 'SL',
+    user: 'Samuel Leao',
+    year: '2013',
+    km: '0 km',
+    price: 'R$ 00.000,00',
+  },
+  {
+    id: '5',
+    title: 'Product title stays here - max 1 line',
+    image: Moto,
+    description:
+      'Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem...',
+    initial: 'SL',
+    user: 'Samuel Leao',
+    year: '2013',
+    km: '0 km',
+    price: 'R$ 00.000,00',
+  },
+];
+
 const CardMotos = () => {
   return (
     <Container>
@@ -47,146 +110,35 @@ const CardMotos = () => {
             },
           }}
         >
-          <SwiperSlide>
-            <Wrapper>
-              <InfoSection>
-                <ImgContainer>
-                  <img src={Moto}></img>
-                </ImgContainer>
-                <div>
-                  <h1>Product title stays here - max 1 line</h1>
-                  <p>
-                    Lorem Ipsum is simply dummy text of the printing and
-                    typesetting industry. Lorem...
-                  </p>
-                  <User>
-                    <div>SL</div>
-                    <span>Samuel Leão</span>
-                  </User>
-                  <CarInfo>
-                    <WrapperInfo>
-                      <div>2013</div>
-                      <div>0 Km</div>
-                    </WrapperInfo>
-                    <span>R$ 00.000,00</span>
-                  </CarInfo>
-                </div>
-              </InfoSection>
-              <AccessPage></AccessPage>
-            </Wrapper>
-          </SwiperSlide>
-          <SwiperSlide>
-            <Wrapper>
-              <InfoSection>
-                <ImgContainer>
-                  <img src={Moto}></img>
-                </ImgContainer>
-                <div>
-                  <h1>Product title stays here - max 1 line</h1>
-                  <p>
-                    Lorem Ipsum is simply dummy text of the printing and
-                    typesetting industry. Lorem...
-                  </p>
-                  <User>
-                    <div>SL</div>
-                    <span>Samuel Leão</span>
-                  </User>
-                  <CarInfo>
-                    <WrapperInfo>
-                      <div>2013</div>
-                      <div>0 Km</div>
-                    </WrapperInfo>
-                    <span>R$ 00.000,00</span>
-                  </CarInfo>
-                </div>
-              </InfoSection>
-              <AccessPage></AccessPage>
-            </Wrapper>
-          </SwiperSlide>
-          <SwiperSlide>
-            <Wrapper>
-              <InfoSection>
-                <ImgContainer>
-                  <img src={Moto}></img>
-                </ImgContainer>
-                <div>
-                  <h1>Product title stays here - max 1 line</h1>
-                  <p>
-                    Lorem Ipsum is simply dummy text of the printing and
-                    typesetting industry. Lorem...
-                  </p>
-                  <User>
-                    <div>SL</div>
-                    <span>Samuel Leão</span>
-                  </User>
-                  <CarInfo>
-                    <WrapperInfo>
-                      <div>2013</div>
-                      <div>0 Km</div>
-                    </WrapperInfo>
-                    <span>R$ 00.000,00</span>
-                  </CarInfo>
-                </div>
-              </InfoSection>
-              <AccessPage></AccessPage>
-            </Wrapper>
-          </SwiperSlide>
-          <SwiperSlide>
-            <Wrapper>
-              <InfoSection>
-                <ImgContainer>
-                  <img src={Moto}></img>
-                </ImgContainer>
-                <div>
-                  <h1>Product title stays here - max 1 line</h1>
-                  <p>
-                    Lorem Ipsum is simply dummy text of the printing and
-                    typesetting industry. Lorem...
-                  </p>
-                  <User>
-                    <div>SL</div>
-                    <span>Samuel Leão</span>
-                  </User>
-                  <CarInfo>
-                    <WrapperInfo>
-                      <div>2013</div>
-                      <div>0 Km</div>
-                    </WrapperInfo>
-                    <span>R$ 00.000,00</span>
-                  </CarInfo>
-                </div>
-              </InfoSection>
-              <AccessPage></AccessPage>
-            </Wrapper>
-          </SwiperSlide>
-          <SwiperSlide>
-            <Wrapper>
-              <InfoSection>
-                <ImgContainer>
-                  <img src={Moto}></img>
-                </ImgContainer>
-                <div>
-                  <h1>Product title stays here - max 1 line</h1>
-                  <p>
-                    Lorem Ipsum is simply dummy text of the printing and
-                    typesetting industry. Lorem...
-                  </p>
-                  <User>
-                    <div>SL</div>
-                    <span>Samuel Leão</span>
-                  </User>
-                  <CarInfo>
-                    <WrapperInfo>
-                      <div>2013</div>
-                      <div>0 Km</div>
-                    </WrapperInfo>
-                    <span>R$ 00.000,00</span>
-                  </CarInfo>
-                </div>
-              </InfoSection>
-              <AccessPage></AccessPage>
-            </Wrapper>
-          </SwiperSlide>
+          {mainProjects.map((user) => (
+            <SwiperSlide key={user.id}>
+              <Wrapper>
+                <InfoSection>
+                  <ImgContainer>
+                    <a href="https://www.google.com.br/">
+                      <img src={user.image}></img>
+                    </a>
+                  </ImgContainer>
+                  <div>
+                    <h1>{user.title}</h1>
+                    <p>{user.description}</p>
+                    <User>
+                      <div>{user.initial}</div>
+                      <span>{user.name}</span>
+                    </User>
+                    <CarInfo>
+                      <WrapperInfo>
+                        <div>{user.year}</div>
+                        <div>{user.km}</div>
+                      </WrapperInfo>
+                      <span>{user.price}</span>
+                    </CarInfo>
+                  </div>
+                </InfoSection>
+                <AccessPage></AccessPage>
+              </Wrapper>
+            </SwiperSlide>
+          ))}
         </Swiper>
       </Wr>
     </Container>
