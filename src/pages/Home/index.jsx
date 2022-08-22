@@ -1,8 +1,8 @@
-import Footer from '../../components/footer/footer';
-import Header from '../../components/Header/index';
-import CardLeilao from '../../components/cardLeilao/index';
-import CardCarros from '../../components/cardCarros';
-import CardMotos from '../../components/cardMotos';
+import Footer from '../../components/footer/index';
+import Header from '../../components/header/index';
+import CardLeilao from '../../components/card_leilao/index';
+import CardCarros from '../../components/card_carros';
+import CardMotos from '../../components/card_motos';
 
 function Home() {
   return (

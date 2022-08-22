@@ -1,5 +1,5 @@
-import Footer from '../../components/footer/footer';
-import Navbar from '../../components/Navbar/index';
+import Footer from '../../components/footer/index';
+import Navbar from '../../components/navbar/index';
 import {
   ContainerLogin,
   Wrapper,

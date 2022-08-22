@@ -2,8 +2,8 @@ import * as yup from 'yup';
 import { yupResolver } from '@hookform/resolvers/yup';
 import { useForm } from 'react-hook-form';
 import Input from '../Input';
-import InputPassword from '../InputPassword';
-import Button from '../button/button';
+import InputPassword from '../Input_password';
+import Button from '../button/index';
 
 import { ContainerPage, ContainerTitle, SideBySide, AccountBtn } from './style';
 
@@ -165,7 +165,7 @@ const FormRegister = () => {
         <Input
           label="Rua"
           register={register}
-          name={'address'}
+          name={'street'}
           error={errors.street?.message}
           placeholder="Ex: Rua das Palmeiras"
           autoComplete="on"
