@@ -1,6 +1,7 @@
 import React from 'react';
 import { FaBars } from 'react-icons/fa';
 import Motors from '../../assets/Motors.png';
+import { AuthContext } from '../../provider/auth';
 import {
   Nav,
   NavbarContainer,
@@ -15,7 +16,9 @@ import {
   Vl,
 } from './style';
 
-function Navbar () {
+function Navbar() {
+  const { isOpen, setIsOpen, toggle } = React.useContext(AuthContext);
+
   return (
     <>
       <Nav>
@@ -23,7 +26,7 @@ function Navbar () {
           <NavLogo to="/">
             <img src={Motors} alt="brand" />
           </NavLogo>
-          <MobileIcon>
+          <MobileIcon onClick={toggle}>
             <FaBars />
           </MobileIcon>
 
@@ -51,6 +54,6 @@ function Navbar () {
       </Nav>
     </>
   );
-};
+}
 
 export default Navbar;
