@@ -16,7 +16,7 @@ import Motors from '../../assets/Motors.png';
 import { AuthContext } from '../../provider/auth';
 
 const Sidebar = () => {
-  const { isOpen, setIsOpen, toggle } = React.useContext(AuthContext);
+  const { isOpen, toggle } = React.useContext(AuthContext);
 
   return (
     <SidebarContainer isOpen={isOpen}>
