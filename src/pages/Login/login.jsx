@@ -1,5 +1,7 @@
 import Footer from '../../components/footer/index';
 import Navbar from '../../components/navbar/index';
+import Sidebar from '../../components/siderbar/index';
+import { useState } from 'react';
 import {
   ContainerLogin,
   Wrapper,
@@ -15,6 +17,7 @@ import {
 function Login() {
   return (
     <>
+      <Sidebar />
       <Navbar />
       <Wrapper>
         <ContainerLogin>
@@ -43,7 +46,7 @@ function Login() {
               <span>Ainda não possui conta?</span>
             </Question>
 
-            <SignInBtn>Cadastrar</SignInBtn>
+            <SignInBtn to="/register">Cadastrar</SignInBtn>
           </Cont>
         </ContainerLogin>
       </Wrapper>

@@ -70,7 +70,7 @@ export const NavMenu = styled.ul`
   text-align: center;
   margin-right: 24px;
 
-  @media screen and (max-width: 768px) {
+  @media screen and (max-width: 780px) {
     display: none;
   }
 `;

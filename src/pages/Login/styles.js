@@ -1,4 +1,5 @@
 import styled from 'styled-components';
+import { Link as LinkR } from 'react-router-dom';
 
 export const Wrapper = styled.div`
   display: flex;
@@ -135,7 +136,7 @@ export const EnterBtn = styled.button`
   margin-bottom: 24px;
 `;
 
-export const SignInBtn = styled.button`
+export const SignInBtn = styled(LinkR)`
   display: flex;
   flex-direction: row;
   justify-content: center;
