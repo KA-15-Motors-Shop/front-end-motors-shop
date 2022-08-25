@@ -17,7 +17,7 @@ import {
 } from './style';
 
 function Navbar() {
-  const { isOpen, setIsOpen, toggle } = React.useContext(AuthContext);
+  const { toggle } = React.useContext(AuthContext);
 
   return (
     <>

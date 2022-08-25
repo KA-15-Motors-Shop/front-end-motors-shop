@@ -1,7 +1,6 @@
 import Footer from '../../components/footer/index';
 import Navbar from '../../components/navbar/index';
 import Sidebar from '../../components/siderbar/index';
-import { useState } from 'react';
 import {
   ContainerLogin,
   Wrapper,

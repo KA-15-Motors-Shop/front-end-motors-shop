@@ -6,7 +6,7 @@ import { Container, Box, ContainerBox, TitleDesc } from './style';
 import { AuthContext } from '../../provider/auth';
 
 function Header() {
-  const { isOpen, setIsOpen, toggle } = React.useContext(AuthContext);
+  const { toggle } = React.useContext(AuthContext);
 
   return (
     <Container>
