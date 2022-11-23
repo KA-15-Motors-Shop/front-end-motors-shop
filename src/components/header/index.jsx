@@ -1,13 +1,16 @@
 import React from 'react';
-import { Container, Box, ContainerBox, TitleDesc } from './styles';
+import Navbar from '../navbar';
+import { Container, Box, ContainerBox, TitleDesc } from './style';
 //import Motors from '../../assets/Motors.png';
 //import { FaBars } from 'react-icons/fa';
-import Navbar from '../navbar';
+import { AuthContext } from '../../provider/auth';
 
-function Header () {
+function Header() {
+  const { isOpen, setIsOpen, toggle } = React.useContext(AuthContext);
+
   return (
     <Container>
-      <Navbar />
+      <Navbar toggle={toggle} />
       <ContainerBox>
         <Box>
           <TitleDesc>
@@ -23,6 +26,6 @@ function Header () {
       </ContainerBox>
     </Container>
   );
-};
+}
 
-export default Header
+export default Header;

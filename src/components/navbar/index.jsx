@@ -1,6 +1,7 @@
 import React from 'react';
 import { FaBars } from 'react-icons/fa';
 import Motors from '../../assets/Motors.png';
+import { AuthContext } from '../../provider/auth';
 import {
   Nav,
   NavbarContainer,
@@ -13,9 +14,11 @@ import {
   NavBtnLink,
   NavBtnLinkLogin,
   Vl,
-} from './styles';
+} from './style';
 
-function Navbar () {
+function Navbar() {
+  const { isOpen, setIsOpen, toggle } = React.useContext(AuthContext);
+
   return (
     <>
       <Nav>
@@ -23,34 +26,34 @@ function Navbar () {
           <NavLogo to="/">
             <img src={Motors} alt="brand" />
           </NavLogo>
-          <MobileIcon>
+          <MobileIcon onClick={toggle}>
             <FaBars />
           </MobileIcon>
 
           <NavMenu>
             <NavItem>
-              <NavLinks>Carros</NavLinks>
+              <NavLinks to="/leilao">Carros</NavLinks>
             </NavItem>
             <NavItem>
-              <NavLinks>Motos</NavLinks>
+              <NavLinks to="/leilao">Motos</NavLinks>
             </NavItem>
             <NavItem>
-              <NavLinks to="">Leilao</NavLinks>
+              <NavLinks to="/leilao">Leilao</NavLinks>
             </NavItem>
 
             <Vl></Vl>
 
             <NavBtn>
-              <NavBtnLinkLogin to="signin=">Fazer Login</NavBtnLinkLogin>
+              <NavBtnLinkLogin to="/login">Fazer Login</NavBtnLinkLogin>
             </NavBtn>
             <NavBtn>
-              <NavBtnLink to="signin=">Cadastrar</NavBtnLink>
+              <NavBtnLink to="/register">Cadastrar</NavBtnLink>
             </NavBtn>
           </NavMenu>
         </NavbarContainer>
       </Nav>
     </>
   );
-};
+}
 
 export default Navbar;

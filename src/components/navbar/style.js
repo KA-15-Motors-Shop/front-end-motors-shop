@@ -3,8 +3,6 @@ import { Link as LinkR } from 'react-router-dom';
 import { Link as LinkS } from 'react-scroll';
 
 export const Nav = styled.nav`
-  background: #212121ba;
-  height: 80px;
   /* margin-top: -80px; */
   display: flex;
   justify-content: center;
@@ -13,6 +11,11 @@ export const Nav = styled.nav`
   position: sticky;
   top: 0;
   z-index: 10;
+  height: 80px;
+  background-color: var(--whitefixed);
+  padding: 0 20px;
+  justify-content: space-between;
+  border-bottom: 2px solid #dee2e6;
 
   @media screen and (max-width: 960px) {
     transition: 0.8s all ease;
@@ -26,8 +29,6 @@ export const NavbarContainer = styled.div`
   z-index: 1;
   width: 100%;
 
-  border-bottom: 2px solid #dee2e6;
-
   @media screen and (min-width: 1024px) {
     padding: 0 24px;
   }
@@ -40,9 +41,13 @@ export const NavLogo = styled(LinkR)`
   font-size: 1.5rem;
   display: flex;
   align-items: center;
-
   font-weight: bold;
   text-decoration: none;
+
+  img {
+    width: 153.02px;
+    height: 26.34px;
+  }
 
   @media screen and (min-width: 1024px) {
     margin-left: 24px;
@@ -65,7 +70,7 @@ export const NavMenu = styled.ul`
   text-align: center;
   margin-right: 24px;
 
-  @media screen and (max-width: 768px) {
+  @media screen and (max-width: 780px) {
     display: none;
   }
 `;
@@ -92,6 +97,7 @@ export const NavLinks = styled(LinkS)`
 export const NavBtn = styled.nav`
   display: flex;
   align-items: center;
+  padding: 0 20px;
 
   @media screen and (max-width: 768px) {
     display: none;
