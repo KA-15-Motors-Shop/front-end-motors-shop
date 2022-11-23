@@ -1,9 +1,11 @@
-import React, { useState, useEffect } from 'react';
-import './styles.css';
+import React from 'react';
+import './stylesa.css';
 import { Swiper, SwiperSlide } from 'swiper/react';
 import { Autoplay, FreeMode } from 'swiper';
 import 'swiper/css';
 import 'swiper/css/free-mode';
+import { useNavigate, Link } from 'react-router-dom';
+import { useEffect, useState } from 'react';
 import {
   Wrapper,
   InfoSection,
@@ -16,34 +18,23 @@ import {
   CarInfo,
   WrapperInfo,
 } from './styles';
-import Moto from '../../assets/moto.png';
-import { api } from '../../service/index';
+import { UseLoginProvider } from '../../provider/login';
 
-const CardMotos = () => {
-  const [products, setProduct] = useState([]);
+const OwnerCarAnnouncements = () => {
+  const { user, getUser, setUser, handleUpdate } = UseLoginProvider();
 
-  const getProduct = async (data) => {
-    const responsee = await api
-      .get(`announcements`)
-      .then((res) => {
-        const result = res.data.filter((curData) => {
-          return curData.vehicle_type === 'Moto';
-        });
-        setProduct(result);
-      })
-      .catch((error) => {
-        console.log(error);
-      });
-  };
+  let navigate = useNavigate();
 
   useEffect(() => {
-    getProduct();
+    getUser();
   }, []);
 
+  console.log(user);
+
   return (
-    <Container id="motos">
+    <Container id="carros">
       <Title>
-        <h1>Motos</h1>
+        <h1>Carros</h1>
       </Title>
       <Wr>
         <Swiper
@@ -68,20 +59,23 @@ const CardMotos = () => {
             },
           }}
         >
-          {products.map((user) => (
+          {user['announcements']?.map((user) => (
             <SwiperSlide key={user.id}>
               <Wrapper>
                 <InfoSection>
                   <ImgContainer>
-                    <a href="https://www.google.com.br/">
-                      <img src={user.image}></img>
-                    </a>
+                    <Link
+                      to={`/announcements/${user.id}`}
+                      onClick={() => window.scrollTo(0, 0)}
+                    >
+                      <img src={user.img_url}></img>
+                    </Link>
                   </ImgContainer>
                   <div>
                     <h1>{user.title}</h1>
                     <p>{user.description}</p>
                     <User>
-                      <div>{user.initial}</div>
+                      <div></div>
                       <span>{user.name}</span>
                     </User>
                     <CarInfo>
@@ -103,4 +97,4 @@ const CardMotos = () => {
   );
 };
 
-export default CardMotos;
+export default OwnerCarAnnouncements;

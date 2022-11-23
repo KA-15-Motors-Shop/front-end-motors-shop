@@ -1,14 +1,18 @@
 import { Routes, Route } from 'react-router-dom';
+import Dashboard from '../pages/Dashboard';
 import Home from '../pages/Home';
-import Login from '../pages/Login/login';
+import Login from '../pages/Login';
+import Products from '../pages/Products';
 import Register from '../pages/Register';
 
 function RouterPages() {
   return (
     <Routes>
-      <Route path="/login" element={<Login />} />
-      <Route path="/register" element={<Register />} />
       <Route path="/" element={<Home />} />
+      <Route path="/login" element={<Login />} />
+      <Route path="/profile" element={<Dashboard />} />
+      <Route path="/register" element={<Register />} />
+      <Route path="/announcements/:id" element={<Products />} />
     </Routes>
   );
 }

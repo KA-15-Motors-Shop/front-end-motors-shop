@@ -69,7 +69,8 @@ export const SideBySide = styled.div`
 `;
 
 export const AccountBtn = styled.div`
-  margin-bottom: 28px;
+  width: 100%;
+
   h1 {
     font-family: 'Inter';
     font-style: normal;
@@ -79,34 +80,42 @@ export const AccountBtn = styled.div`
     color: #000000;
     padding-bottom: 28px;
   }
+`;
 
-  div {
-    width: 100%;
+export const Wrap = styled.div`
+  width: 100%;
+  display: flex;
+  gap: 11px;
 
-    button {
-      width: 139px;
-      height: 48px;
-      border-radius: 4px;
-      padding: 12px 28px 12px 28px;
-      background-color: #4529e6;
-      font-family: 'Inter';
-      font-style: normal;
-      font-weight: 600;
-      font-size: 16px;
-      line-height: 0px;
-      color: #ffffff;
+  input{
+    cursor: pointer;
+    font-weight: 500;
+  }
 
-      :first-child {
-        margin-right: 9px;
-      }
+  /* button {
+    width: 139px;
+    height: 48px;
+    border-radius: 4px;
+    padding: 12px 28px 12px 28px;
+    background-color: #4529e6;
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 0px;
+    color: #ffffff;
+    cursor: pointer;
 
-      :nth-child(2) {
-        border: 1.5px solid #adb5bd;
-        border-radius: 4px;
-        background-color: transparent;
-        color: #0b0d0d;
-      }
+    :first-child {
+      margin-right: 9px;
     }
+
+    :nth-child(2) {
+      border: 1.5px solid #adb5bd;
+      border-radius: 4px;
+      background-color: transparent;
+      color: #0b0d0d;
+    } */
   }
 
   @media (min-width: 1024px) {

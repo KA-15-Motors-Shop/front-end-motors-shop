@@ -19,7 +19,7 @@ const Sidebar = () => {
   const { isOpen, toggle } = React.useContext(AuthContext);
 
   return (
-    <SidebarContainer isOpen={isOpen}>
+    <SidebarContainer isOpen={isOpen} aria-hidden="true">
       <NavWrapper>
         <NavLogo to="/">
           <img src={Motors} alt="brand" />

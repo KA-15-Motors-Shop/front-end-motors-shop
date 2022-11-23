@@ -1,4 +1,5 @@
 import styled from 'styled-components';
+import { Link as LinkS } from 'react-scroll';
 
 export const Container = styled.header`
   height: 703px;
@@ -46,18 +47,7 @@ export const Box = styled.div`
   }
 
   div {
-    button {
-      height: 48px;
-      font-weight: 600;
-      font-size: 1rem;
-      color: var(--grey10);
-      padding: 12px 28px;
-      width: 351px;
-      background-color: var(--brand-1);
-      border: 1.5px solid #fdfdfd;
-      border-radius: 4px;
-      margin-bottom: 20px;
-    }
+    gap: 21px;
   }
 
   @media screen and (min-width: 768px) {
@@ -90,6 +80,26 @@ export const Box = styled.div`
 export const ContainerBox = styled.div`
   display: flex;
   justify-content: center;
+`;
+
+export const Btnn = styled(LinkS)`
+  height: 48px;
+  font-weight: 600;
+  font-size: 1rem;
+  color: var(--grey10);
+  padding: 12px 28px;
+  width: 351px;
+  background-color: var(--brand-1);
+  border: 1.5px solid #fdfdfd;
+  border-radius: 4px;
+  margin-bottom: 20px;
+  cursor: pointer;
+
+  :hover {
+    background-color: var(--grey10);
+    color: var(--grey1);
+    transition: 0.3s;
+  }
 `;
 
 export const TitleDesc = styled.div`

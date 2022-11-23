@@ -1,16 +1,14 @@
 import React from 'react';
 import Navbar from '../navbar';
-import { Container, Box, ContainerBox, TitleDesc } from './style';
+import { Container, Box, ContainerBox, TitleDesc, Btnn } from './style';
 //import Motors from '../../assets/Motors.png';
 //import { FaBars } from 'react-icons/fa';
 import { AuthContext } from '../../provider/auth';
 
 function Header() {
-  const { toggle } = React.useContext(AuthContext);
-
   return (
     <Container>
-      <Navbar toggle={toggle} />
+      <Navbar />
       <ContainerBox>
         <Box>
           <TitleDesc>
@@ -18,9 +16,9 @@ function Header() {
             <p>Um ambiente feito para você explorar o seu melhor</p>
           </TitleDesc>
           <div>
-            <button>Leilão</button>
-            <button>Carros</button>
-            <button>Motos</button>
+            <Btnn to="leilao">Leilão</Btnn>
+            <Btnn to="carros">Carros</Btnn>
+            <Btnn to="motos">Motos</Btnn>
           </div>
         </Box>
       </ContainerBox>
